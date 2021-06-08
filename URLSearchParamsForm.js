@@ -1,3 +1,4 @@
+/* Johan Wistbacka */
 window.onload = function URLSearchParamsFields() {
 	if(document.getElementsByClassName("URLSearchParamsField").length > 0){
 		let formFields = document.getElementsByClassName("URLSearchParamsField");
