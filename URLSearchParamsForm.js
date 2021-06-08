@@ -1,7 +1,8 @@
 /* Johan Wistbacka */
+
+let formFields = document.getElementsByClassName("URLSearchParamsField");
 window.onload = function URLSearchParamsFields() {
 	if(document.getElementsByClassName("URLSearchParamsField").length > 0){
-		let formFields = document.getElementsByClassName("URLSearchParamsField");
 		const queryString = window.location.search;
 		let params = new URLSearchParams(queryString);
 		for (let field of formFields) { 

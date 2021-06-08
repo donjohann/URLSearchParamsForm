@@ -1,0 +1,41 @@
+
+<form class="URLSearchParamsForm" method="get">
+	<ul>
+		<li><hr></li>
+		<li>name<input type="text" class="URLSearchParamsField" value="" name="Field_name" id="Field_name" /></li>
+		<li>date<input type="date"  class="URLSearchParamsField" value="" name="Field_date" id="Field_date" /></li>
+		<li>email<input type="email"  class="URLSearchParamsField" value="" name="Field_email" id="Field_email" /></li>
+		<li><hr></li>
+		<li>1<input type="radio"  class="URLSearchParamsField" value="r1" id="Field_r1" name="Field_radio" /></li>
+		<li>2<input type="radio"  class="URLSearchParamsField"  value="r2" id="Field_r2" name="Field_radio" /></li>
+		<li>3<input type="radio"  class="URLSearchParamsField" value="r3" id="Field_r3" name="Field_radio" /></li>
+		<li><hr></li>
+		<li>1<input type="checkbox"  class="URLSearchParamsField" value="c1" id="Field_c1" name="Field_checkbox" /></li>
+		<li>2<input type="checkbox"  class="URLSearchParamsField" value="c2" id="Field_c2" name="Field_checkbox" /></li>
+		<li>3<input type="checkbox"  class="URLSearchParamsField" value="c3" id="Field_c3" name="Field_checkbox" /></li>
+		<li><hr></li>
+		<li><textarea   name="Field_textarea"  class="URLSearchParamsField" id="Field_textarea" >textarea</textarea></li>
+		<li>
+			<select   name="Field_select"  class="URLSearchParamsField" id="Field_select">
+				<option value="o1">o1</option>
+				<option value="o2">o2</option>
+				<option value="o3">o3</option>
+			</select>
+		</li>
+	</ul>
+	<input type="submit" value="get" />
+</form>
+<div id="Field_demo">Demo</div>
+<script src="https://cdn.jsdelivr.net/gh/donjohann/URLSearchParamsForm/URLSearchParamsForm-min.js"></script>
+<script>
+	/* Johan Wistbacka */
+	
+document.getElementsById("URLSearchParamsForm").onchange = function () {
+	alert('change');
+	document.getElementById('Field_demo').innerHTML = params;
+
+}
+;
+	
+	
+</script>
